@@ -4,9 +4,6 @@ import torch
 from transformers import AutoTokenizer
 from datasets import load_dataset
 
-# cola_dataset = load_dataset("glue", "cola")
-# print(cola_dataset)
-
 
 class DataModule(pl.LightningDataModule):
     def __init__(self, model_name="google/bert_uncased_L-2_H-128_A-2", batch_size=32):
