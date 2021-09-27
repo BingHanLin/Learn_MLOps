@@ -4,8 +4,9 @@ from ColaPredictor import ColaPredictor
 
 import pytorch_lightning as pl
 import torch
-from ignite.handlers import ModelCheckpoint
-from ignite.handlers import EarlyStopping
+from pytorch_lightning.callbacks import ModelCheckpoint
+from pytorch_lightning.callbacks import EarlyStopping
+
 
 checkpoint_callback = ModelCheckpoint(
     dirpath="./models", monitor="val_loss", mode="min"
