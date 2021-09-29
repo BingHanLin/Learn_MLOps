@@ -1,10 +1,9 @@
-import pytorch_lightning as pl
 import torch
 import torch.nn as nn
+import pytorch_lightning as pl
 import torch.nn.functional as F
-
-from sklearn.metrics import accuracy_score
 from transformers import AutoModel
+from sklearn.metrics import accuracy_score
 
 
 class ColaModel(pl.LightningModule):

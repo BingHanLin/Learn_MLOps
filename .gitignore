@@ -1,5 +1,5 @@
 **/__pycache__
-/learn_MLOps
+/MLOps-env
 **/logs
 /models
 /wandb
